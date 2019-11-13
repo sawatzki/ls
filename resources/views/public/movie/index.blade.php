@@ -3,6 +3,8 @@
 @section('content')
     <h2 class="text-center" >MOVIES</h2>
 
+    <a href="{{ route('movie.edit') }}">CREATE</a>
+
     <div class="float-left col-6">
         {{ $movies->links() }}
     </div>

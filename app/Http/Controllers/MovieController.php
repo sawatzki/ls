@@ -26,7 +26,7 @@ class MovieController extends Controller
      */
     public function create()
     {
-        //
+        return redirect()->route('movie.index');
     }
 
     /**
@@ -55,7 +55,7 @@ class MovieController extends Controller
     public function show($id)
     {
         $movie = Movie::where('id', $id)->first();
-        return view('public.movie.show', compact('movie', 'movie'));
+        return view('public.movie.show', compact('movie'));
     }
 
     /**
@@ -64,22 +64,14 @@ class MovieController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id = null)
     {
-        $movie = Movie::where('id', $id)->first();
-        return view('public.movie.edit', compact('movie', 'movie'));
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
+//        die("success");
+//        $movie = Movie::where('id', $id)->first();
+//        return view('public.movie.edit', compact('movie'));
+        $data = ($id > 0) ? Movie::whereId($id)->first() : null;
+//        $authors = Author::orderBy('lastname')->get();
+        return view('public.movie.edit', compact('data'));
     }
 
     /**

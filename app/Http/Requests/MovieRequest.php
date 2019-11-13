@@ -39,7 +39,7 @@ class MovieRequest extends FormRequest
             'price.required' => 'Bitte einen Preis angeben!',
             'price.numeric' => 'Der Preis darf nur numerische Zeichen enthalten!',
 //            'author_id.required' => 'Bitte einen Autor auswählen!',
-            'description.required' => 'Bitte einen Autor auswählen!',
+            'description.required' => 'Bitte einen DESC auswählen!',
         ];
     }
 }
