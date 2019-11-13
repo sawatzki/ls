@@ -20,6 +20,7 @@ class CreateMoviesTable extends Migration
             $table->integer('author_id');
             $table->string('title')->nullable();
             $table->decimal('price');
+            $table->text('description')->nullable();
             $table->string('language')->nullable();
 
             $table->timestamps();

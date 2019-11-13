@@ -47,7 +47,8 @@ class MovieController extends Controller
      */
     public function show($id)
     {
-        //
+        $movie = Movie::where('id', $id)->first();
+        return view('public.movie.show', compact('movie', 'movie'));
     }
 
     /**

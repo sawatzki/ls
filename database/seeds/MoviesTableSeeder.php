@@ -18,7 +18,8 @@ class MoviesTableSeeder extends Seeder
             $movie->author_id = rand(1, 5);
             $movie->category_id = rand(1, 10);
             $movie->title = 'Movie ' . $i;
-            $movie->price = rand(1, 50) . "." . rand(1,9);
+            $movie->price = rand(1, 50) . "." . rand(1, 9);
+            $movie->description = 'DESC ' . $i . ': Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet animi asperiores, deleniti dignissimos dolorem doloremque eaque est exercitationem illo iste laudantium minima mollitia numquam odit possimus praesentium, quae sint velit voluptas voluptates?';
             $movie->language = 'de';
             $movie->save();
         }
