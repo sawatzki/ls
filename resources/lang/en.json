@@ -1,0 +1,13 @@
+{
+    "description": "Description",
+    "main": "Main",
+    "movie": "Movie",
+    "contacts": "Contacts",
+    "price": "Price",
+    "title": "Title",
+    "insert": "Insert",
+    "edit": "Edit",
+    "update": "Edit",
+    "delete": "Delete"
+
+}

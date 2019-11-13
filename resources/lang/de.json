@@ -1,0 +1,13 @@
+{
+    "description": "Beschreibung",
+    "main": "Startseite",
+    "movie": "Filme",
+    "contacts": "Kontakts",
+    "price": "Kosten",
+    "title": "Titel",
+    "create": "Erstellen",
+    "insert": "Hinzufügen",
+    "edit": "Bearbeiten",
+    "update": "Ändern",
+    "delete": "Löschen"
+}
