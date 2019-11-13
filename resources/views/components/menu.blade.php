@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}
@@ -16,10 +16,10 @@
                     <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SHOP</a>
+                    <a class="nav-link" href="{{ route('movie.index') }}">MOVIE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTS</a>
+                    <a class="nav-link" href="{{ route('contact.index') }}">CONTACTS</a>
                 </li>
             </ul>
 

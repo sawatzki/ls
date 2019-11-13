@@ -26,7 +26,7 @@
             @endcomponent
 
         <main class="py-4">
-            <div class="container">
+            <div class="container mt-5">
                 @yield('content')
             </div>
         </main>
