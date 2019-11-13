@@ -33,8 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        @component('components.menu_top')
-                            @endcomponent
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -74,9 +73,7 @@
         </nav>
 
         <main class="py-4">
-            <div class="container">
-                @yield('content')
-            </div>
+            @yield('content')
         </main>
     </div>
 </body>
