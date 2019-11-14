@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    HELLO LARAVEL
+    @lang('login')
 @endsection
