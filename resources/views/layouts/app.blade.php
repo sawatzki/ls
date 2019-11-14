@@ -21,7 +21,6 @@
 </head>
 <body>
     <div id="app">
-
         @component('components.menu')
             @endcomponent
 

@@ -6,6 +6,7 @@ Route::get('/', function () {
     return view('start');
 });
 
+Route::get('lang/{land}', 'LanguageController@switchLang')->name('lang.switch');
 
 Route::get('/home', 'HomeController@index')->name('home');
 

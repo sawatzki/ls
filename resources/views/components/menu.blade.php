@@ -53,8 +53,19 @@
                             </form>
                         </div>
                     </li>
+
                 @endguest
             </ul>
+
+                @foreach (config('languages') as $lang => $language)
+                    <a class=" @if($lang === app()->getLocale()) active @endif" href="{{ route('lang.switch', $lang) }}">{{ $lang }}</a>
+                    <!--span class="d-inline pipe">|</span-->
+                    <span>|</span>
+                @endforeach
+
+
         </div>
+
     </div>
+
 </nav>
