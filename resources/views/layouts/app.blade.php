@@ -33,7 +33,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        @foreach (config('languages') as $lang => $language)
+                            <a class=" @if($lang === app()->getLocale()) active @endif" href="{{ route('lang.switch', $lang) }}">{{ $lang }}</a>
+                            <span>|</span>
+                        @endforeach
                     </ul>
 
                     <!-- Right Side Of Navbar -->

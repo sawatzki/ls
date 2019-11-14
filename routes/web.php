@@ -18,4 +18,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-//Route::get('/main', 'MainController@index')->name('main');
+Route::get('lang/{land}', 'LanguageController@switchLang')->name('lang.switch');
