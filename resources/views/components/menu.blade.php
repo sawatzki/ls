@@ -57,11 +57,10 @@
                 @endguest
             </ul>
 
-                @foreach (config('languages') as $lang => $language)
-                    <a class=" @if($lang === app()->getLocale()) active @endif" href="{{ route('lang.switch', $lang) }}">{{ $lang }}</a>
-                    <!--span class="d-inline pipe">|</span-->
-                    <span>|</span>
-                @endforeach
+            @foreach (config('languages') as $lang => $language)
+                <a class=" @if($lang === app()->getLocale()) active @endif" href="{{ route('lang.switch', $lang) }}">{{ $lang }}</a>
+                <span>|</span>
+            @endforeach
 
 
         </div>

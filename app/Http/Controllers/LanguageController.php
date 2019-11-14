@@ -10,12 +10,6 @@ class LanguageController extends Controller
         if (array_key_exists($lang, config('languages'))){
             session()->put('applocale', $lang);
         }
-
-//        session(['key' => 'value 123']);
-        echo "SESS: " . session('applocale');
-
-
         return redirect()->back();
-        dd(session());
     }
 }
