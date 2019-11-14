@@ -18,4 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-//Route::get('/main', 'MainController@index')->name('main');
+
+Route::get('/notes', 'NoteController@index')->name('notes.index'); //###1
+Route::get('/notes/edit/{id?}', 'NoteController@edit')->name('notes.edit'); //###1
+Route::post('/notes/store/{id?}', 'NoteController@store')->name('notes.store'); //###1
+Route::get('/notes/{id}', 'NoteController@destroy')->name('notes.destroy'); //###1
